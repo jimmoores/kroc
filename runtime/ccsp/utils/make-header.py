@@ -400,7 +400,7 @@ def gen_i386_header(f):
 	f.line(": \"i\" (top * sizeof(word)),")
 	f.line("  \"i\" ((top - 4) * sizeof(word)),")
 	f.line("  \"0\" (ws), \"1\" (sched), \"2\" (stack), \"3\" (func)")
-	f.line(": \"cc\", \"memory\", \"ebx\", \"ecx\"")
+	f.line(": \"memory\", \"cc\", \"ebx\", \"ecx\"")
 
 	f.outdent()
 	f.line(");")
